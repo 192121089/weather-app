@@ -1,0 +1,108 @@
+/* Basic reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  transition: background 0.5s;
+}
+
+.app {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  margin: auto;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.app-header {
+  margin-bottom: 20px;
+}
+
+.app-main {
+  margin: 20px 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 70%;
+}
+
+.search-button {
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #2575fc;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #1b4b8b;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.weather-info {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.weather-main {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.weather-description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.temperature,
+.humidity,
+.wind-speed {
+  margin: 10px 0;
+}
+
+.app-footer {
+  margin-top: 20px;
+  color: white;
+}
+
+/* Background styles for different weather conditions */
+body.default {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+body.sunny {
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+body.cloudy {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+body.rainy {
+  background: linear-gradient(to right, #005c97, #363795);
+}
